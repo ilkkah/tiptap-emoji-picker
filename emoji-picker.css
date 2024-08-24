@@ -1,0 +1,57 @@
+.emoji-picker__container {
+  width: 100%;
+  max-height: 24rem;
+  border-width: 1px;
+  z-index: 10;
+  border-radius: 0.5rem;
+  overflow: auto;
+  cursor: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+
+  --picker-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --picker-shadow-colored: 0 1px 3px 0 var(--picker-shadow-color),
+    0 1px 2px -1px var(--picker-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--picker-shadow);
+}
+
+.emoji-picker__emoji {
+  -webkit-user-select: text;
+  user-select: text;
+  font-family: "Twemoji Mozilla", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji", "EmojiOne Color", "Android Emoji",
+    sans-serif;
+  min-width: 1.75rem;
+  min-height: 1.75rem;
+  display: inline-flex;
+  justify-content: center;
+  border-radius: 0.125rem;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.emoji-picker__emoji:hover {
+  --emoji-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--emoji-bg-opacity));
+}
+
+.emoji-picker__emoji__img {
+  width: 1em;
+  height: 1em;
+  min-width: 1.75rem;
+  min-height: 1.75rem;
+}
+
+.emoji-picker__emoji__char {
+}
